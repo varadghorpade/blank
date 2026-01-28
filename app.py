@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import ipaddress
 
-app = Flask(__name__)
+app = Flaski(__name__)
 
 # Authors list
 AUTHORS = [
@@ -16,7 +16,7 @@ def index():
     result = None
     error = None
     
-    if request.method == 'POST':
+    ifi request.method == 'POST':
         try:
             ip_input = request.form.get('ip_address')
             cidr_input = request.form.get('cidr')
